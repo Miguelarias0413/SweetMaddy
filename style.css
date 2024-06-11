@@ -1,21 +1,21 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Indie Flower', cursive;  
+    font-family: 'Indie Flower', cursive;
 }
-body{
+
+body {
     background-color: rgb(249, 220, 220);
 }
 
-.modal-hamburguesa{
+.modal-hamburguesa {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -31,7 +31,7 @@ body{
     transition: transform 0.3s ease-in-out;
 
 
-    .modal-items{
+    .modal-items {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -40,7 +40,8 @@ body{
         width: 100%;
         height: 100%;
     }
-    .modal-item{
+
+    .modal-item {
         font-size: 1.5rem;
         font-weight: 600;
         color: white;
@@ -48,29 +49,29 @@ body{
         height: 10px;
         display: flex;
 
-        a{
+        a {
             color: #000000;
 
         }
-        
 
 
-        .svg-icons{
+
+        .svg-icons {
             height: 50px;
 
-            svg{
+            svg {
                 width: 50px;
                 height: 100%;
                 color: #f4526d;
-                
+
             }
         }
 
     }
-    
+
 }
 
-.header__container{
+.header__container {
     background-color: rgb(255, 255, 255);
     height: 90px;
     display: flex;
@@ -81,11 +82,12 @@ body{
     z-index: 1000;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 
-    .logo__container{
+    .logo__container {
         height: 100%;
         padding: 10px;
     }
-    .logo{
+
+    .logo {
         height: 100%;
         width: 100%;
         display: flex;
@@ -93,24 +95,24 @@ body{
         align-items: center;
     }
 
-    .menu-hamburguesa{
+    .menu-hamburguesa {
         height: 40px;
         position: absolute;
         width: auto;
         left: 30px;
         cursor: pointer;
         transition: transform 0.1s ease;
-        filter:drop-shadow(0px 0px 10px pink  );
+        filter: drop-shadow(0px 0px 10px pink);
 
 
-        &:hover{
+        &:hover {
             transform: scale(1.1);
         }
-       
+
     }
 
-    .close-button{
-        filter:drop-shadow(0px 0px 10px pink  );
+    .close-button {
+        filter: drop-shadow(0px 0px 10px pink);
         height: 40px;
         position: absolute;
         width: auto;
@@ -119,18 +121,19 @@ body{
         transition: transform 0.1s ease;
         z-index: 1000;
 
-        &:hover{
+        &:hover {
             transform: scale(1.1);
         }
 
     }
 }
-.hidden{
+
+.hidden {
     display: none;
 }
 
 
-.banner__container{
+.banner__container {
     height: 80vh;
     margin: 1rem 0;
     width: 100%;
@@ -139,7 +142,7 @@ body{
     align-items: end;
     position: relative;
 
-    .img-banner{
+    .img-banner {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -147,17 +150,18 @@ body{
         /* filter: blur(4px); */
     }
 
-    .banner-logo{
+    .banner-logo {
         position: absolute;
     }
-    .banner-text{
+
+    .banner-text {
         position: absolute;
         color: rgb(255, 255, 255);
         font-size: 2rem;
         font-weight: 600;
         text-align: center;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        filter: drop-shadow(0px 0px 10px rgb(255, 0, 179)  );
+        filter: drop-shadow(0px 0px 10px rgb(255, 0, 179));
         pointer-events: none;
         margin-left: 30px;
     }
@@ -165,16 +169,19 @@ body{
 
 }
 
-.products__container{
+.products__container {
     width: 100%;
     min-height: 100vh;
     background-color: rgba(255, 255, 255, 0.167);
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 10px 0;
+    border-bottom: 1px solid rgba(255, 0, 179, 0.5);
+    border-top: 1px solid rgba(255, 0, 179, 0.5);
+    padding: 20px 0;
 
-    .products-title{
+
+    .products-title {
         font-size: 2rem;
         font-weight: 600;
         color: rgb(255, 0, 179);
@@ -182,15 +189,15 @@ body{
         margin: 2rem 0;
     }
 
-    .products{
+    .products {
         display: grid;
         width: 100%;
         height: auto;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         justify-items: center;
         grid-row-gap: 100px;
-        
-        .product-card{
+
+        .product-card {
             display: flex;
             background-color: rgb(255, 255, 255);
             width: 280px;
@@ -198,29 +205,30 @@ body{
             padding: 10px;
             flex-direction: column;
 
-            .product-img-container{
+            .product-img-container {
                 width: 100%;
                 height: 80%;
                 object-fit: cover;
-                object-position:bottom;
+                object-position: bottom;
                 overflow: hidden;
                 background-color: red;
-                
 
-               
+
+
             }
 
-            .product-img{
+            .product-img {
                 width: 100%;
                 height: 100%;
                 transition: transform 0.3s ease;
-                &:hover{
+
+                &:hover {
                     transform: scale(1.2);
                 }
-                
+
             }
 
-            .product-information{
+            .product-information {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -231,13 +239,13 @@ body{
                 padding: 5px;
             }
 
-            .product-title{
+            .product-title {
                 color: rgb(255, 0, 179);
                 font-size: 1.5rem;
                 font-weight: 600;
             }
-            
-            .buy-button{
+
+            .buy-button {
                 background-color: rgb(255, 0, 179);
                 color: rgb(255, 255, 255);
                 font-size: 1.2rem;
@@ -247,11 +255,69 @@ body{
                 transition: background-color 0.3s ease;
                 border-radius: 5px;
 
-                &:hover{
+                &:hover {
                     background-color: rgba(237, 198, 4, 0.8);
                 }
             }
         }
 
+    }
+}
+
+.information__container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+
+
+    .information_image_container {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .information_image {
+            width: 80%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 20px;
+        }
+
+    }
+
+    .information {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+
+        h3{
+            color:#f4526d;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+}
+
+.footer__container{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    z-index: 1000;
+
+    .footer__text{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgb(255, 0, 179);
     }
 }
