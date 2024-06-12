@@ -279,7 +279,10 @@ body {
         align-items: center;
 
         .information_image {
+            height: 70%;
+            max-height: 500px;
             width: 80%;
+            max-width: 400px;
             object-fit: cover;
             object-position: center;
             border-radius: 20px;
@@ -294,10 +297,15 @@ body {
         justify-content:center;
         align-items: center;
         flex-direction: column;
+        padding: 10px;
 
         h3{
             color:#f4526d;
             font-size: 2rem;
+            text-align: center;
+        }
+        p{
+            font-size: 1.1rem;
             text-align: center;
         }
     }
@@ -320,4 +328,21 @@ body {
         font-weight: 600;
         color: rgb(255, 0, 179);
     }
+}
+
+
+@media (width<720px) {
+    .banner__container{
+        .img-banner {
+            object-position:center;
+            object-fit: cover;
+            /* filter: blur(4px); */
+        }
+
+    }
+
+    
+
+   
+    
 }
